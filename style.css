@@ -1,0 +1,112 @@
+:root {
+    --primary-color: rgba(55, 120, 250, 1);
+    --font-color: #0000;
+
+    --font-body: 'SpaceGrotesk-Regular', sans-serif;
+    --font-logo: 'SpaceGrotesk', sans-serif;
+
+
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Bold';
+    src: url('/Fontes/SpaceGrotesk-SemiBold.ttf') format('truetype');
+    font-size: 600;
+
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk-Regular';
+    src: url('/Fontes/SpaceGrotesk-Regular.ttf') format('truetype');
+    
+}
+
+
+@media (min-width: 428px) {
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .menu-mobile button {
+        background-color: #fff;
+        border: 0;
+        font-weight: 100;
+        font-size: 2rem;
+    }
+
+    .hero h1 {
+        font-size:  2.6rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        margin-bottom: 21px;
+        text-align: center;
+    }
+
+    .hero h3 {
+        font-family: var(--font-body);
+        font-weight: 100;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .hero img{
+        max-width: 100%;
+    }
+
+
+}
+
+/*Fim media mobile*/
+
+body {
+    font-family: var(--font-body);
+}
+
+.logo {
+    color: var(--primary-color);
+}
+
+.btn {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+
+.header {
+    padding: 1rem 0;
+    width: 100%;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
