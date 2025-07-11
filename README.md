@@ -1,4 +1,4 @@
 # TalentHive
 
 
-👉 [Clique aqui para visitar o site](https://cafe-aurora.vercel.app/)
+👉 [Clique aqui para visitar o site](https://talent-hive-hazel.vercel.app/)
