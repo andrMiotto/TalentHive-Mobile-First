@@ -243,34 +243,71 @@
 /*Fim media mobile*/
 
 
-@media (min-width: 1905px) {
+@media (min-width: 1024px) {
 
+    .logo {
+        font-size: 1.5rem;
+    }
+
+
+
+    .hero h1 {
+        font-size: 5rem;
+        margin: 6rem 6rem 2rem 6rem;
+    }
+
+
+    .hero h3 {
+
+        font-size: 1em;
+
+    }
+
+    .header-inner {
+        gap: 1px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu {
+        display: grid;
+        font-size: 0.875rem;
+        grid-template-columns: 1fr 1fr;
+    }
 
     .menu-mobile {
         display: none;
     }
 
-.menu ul{
-    display: flex;
-}
+    .menu ul {
+        display: flex;
+    }
 
     .menu .menu-navegacao {
         display: flex;
-        color: black;
         gap: 2.688rem;
         list-style: none;
-        justify-content: center;
 
-    }.menu .menu-login{
+    }
+
+    .menu .menu-login {
         display: flex;
         color: black;
     }
 
-    .menu a{
+    .menu a {
         color: black;
     }
 
+    .body-a {
+        max-width: 100%;
+        margin-top: 5.6rem;
+    }
 
+    .container h2 {
+        font-size: 5rem;
+    }
 }
 
 
