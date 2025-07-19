@@ -31,6 +31,9 @@
 
 
 @media (min-width: 428px) {
+
+
+
     .header-inner {
         display: flex;
         justify-content: space-between;
@@ -115,6 +118,8 @@
 
     }
 
+
+
     .card-com-texto {
         width: 100%;
 
@@ -185,7 +190,7 @@
 
 
     .footer-brand {
-        max-width: 80%;
+        max-width: 100%;
     }
 
     .above-logo-text {
@@ -238,76 +243,8 @@
     .view-on-maps {
         color: rgba(160, 218, 122, 1);
     }
-}
-
-/*Fim media mobile*/
 
 
-@media (min-width: 1024px) {
-
-    .logo {
-        font-size: 1.5rem;
-    }
-
-
-
-    .hero h1 {
-        font-size: 5rem;
-        margin: 6rem 6rem 2rem 6rem;
-    }
-
-
-    .hero h3 {
-
-        font-size: 1em;
-
-    }
-
-    .header-inner {
-        gap: 1px;
-        display: grid;
-        align-items: center;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .menu {
-        display: grid;
-        font-size: 0.875rem;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .menu-mobile {
-        display: none;
-    }
-
-    .menu ul {
-        display: flex;
-    }
-
-    .menu .menu-navegacao {
-        display: flex;
-        gap: 2.688rem;
-        list-style: none;
-
-    }
-
-    .menu .menu-login {
-        display: flex;
-        color: black;
-    }
-
-    .menu a {
-        color: black;
-    }
-
-    .body-a {
-        max-width: 100%;
-        margin-top: 5.6rem;
-    }
-
-    .container h2 {
-        font-size: 5rem;
-    }
 }
 
 
@@ -317,6 +254,12 @@ body {
 
 .logo {
     color: var(--primary-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .btn {
@@ -342,4 +285,164 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.img-celular-sem-fundo {
+    display: none;
+}
+
+/*Fim media mobile*/
+
+
+@media (min-width: 1024px) {
+
+    .logo {
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        font-weight: bold;
+    }
+
+
+    .menu-navegacao li a {
+        white-space: nowrap;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+        margin: 6rem 6rem 2rem 6rem;
+    }
+
+    .menu-login .btn {
+        color: white;
+        background-color: var(--primary-color);
+    }
+
+    .hero h3 {
+
+        font-size: 1em;
+
+    }
+
+    .header-inner {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        padding: 1rem 0;
+        gap: 3rem;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        font-size: 0.875rem;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu .menu-navegacao {
+        display: flex;
+        gap: 2.688rem;
+        list-style: none;
+
+    }
+
+    .menu .menu-login {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-left: auto;
+    }
+
+    .menu-login ul {
+        gap: 7px;
+    }
+
+    .menu a {
+        color: black;
+    }
+
+
+
+    .body-a {
+        max-width: 100%;
+        margin-top: 5.6rem;
+    }
+
+    .container h2 {
+        font-size: 3.5rem;
+    }
+
+    .body-b {
+        padding-top: 3.5rem;
+        margin: 2rem 4rem 4rem 4rem;
+
+
+    }
+
+
+
+    .conteudo-body-b {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    .titulo-body-b h2 {
+        display: flex;
+        margin-top: 8rem;
+        font-size: 3.5rem;
+        justify-content: center;
+
+    }
+
+
+    .img-celular-sem-fundo {
+        display: flex;
+    }
+
+    .card {
+        padding: 30px;
+    }
+
+    .img-celular-esquerda {
+        display: none;
+    }
+
+    .footer-brand {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titulo-footer {
+        flex: 1;
+        margin-right: 10rem;
+    }
+
+    .botao-e-descricao {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .direitos-autorais {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .descricao-footer {
+        max-width: 100%;
+    }
+
+    .footer-divider {
+        margin: 5rem 0 1rem 0rem;
+    }
 }
